@@ -1,6 +1,4 @@
 # The Guessing Game
-**Created:** 
-Sat  3 Nov 2018 17:56:00 UTC
+**Created:** Sat  3 Nov 2018 18:09:45 UTC
 
-**Lines of code:** 
-32
+**Lines of code:** 32
