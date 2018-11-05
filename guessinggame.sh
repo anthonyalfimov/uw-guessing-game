@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
 # File: guessinggame.sh
 
-files=$(ls -1 | wc -l | tr -d ' ')	# correct answer (tr deletes leading whitespace)
+# actual number of files (not including directories):
+# - ls with -p flag appends "/" to directory names, grep filters them out
+# - tr deletes leading whitespace
+files=$(ls -1p | grep -v "/$" | wc -l | tr -d ' ')
 is_num=^[0-9]+$				# regex to test whether input is a positive number
 
 function prompt_input {
